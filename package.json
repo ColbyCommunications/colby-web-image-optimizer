@@ -1,0 +1,37 @@
+{
+  "name": "colby-web-image-optimizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-beta.4",
+    "babel-preset-env": "^1.7.0",
+    "laravel-mix": "^6.0.18",
+    "postcss": "^8.2.13",
+    "react-refresh": "^0.10.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "browser-image-compression": "^1.0.14",
+    "cropperjs": "^1.5.11",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-cropper": "^2.1.7",
+    "react-dom": "^17.0.2"
+  }
+}
