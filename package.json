@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "bootstrap": "^5.0.0-beta3",
     "browser-image-compression": "^1.0.14",
     "cropperjs": "^1.5.11",
     "prop-types": "^15.7.2",
