@@ -1,4 +1,5 @@
 node_modules
-dist
+dist/index.js
+dist/app.js
 mix-manifest.json
 hot
