@@ -71,8 +71,6 @@ class App extends React.Component {
             let $this = this;
             imageCompression(blob, options)
                 .then(function (compressedFile) {
-                    console.log('compressedFile instanceof Blob', compressedFile instanceof Blob); // true
-                    console.log(`compressedFile size ${compressedFile.size / 1024 / 1024} MB`); // smaller than maxSizeMB
                     const blobUrl = URL.createObjectURL(compressedFile);
                     const link = document.createElement('a');
 
@@ -113,7 +111,6 @@ class App extends React.Component {
     };
 
     render() {
-        console.log(this.state);
         return (
             <div className="container">
                 <div className="row my-4">
