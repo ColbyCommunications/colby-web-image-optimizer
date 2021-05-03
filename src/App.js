@@ -76,7 +76,7 @@ class App extends React.Component {
 
                     // Set link's href to point to the Blob URL
                     link.href = blobUrl;
-                    link.download = $this.state.imageFile.name;
+                    link.download = $this.state.imageFile.name.slice(0, -4) + '.jpg';
 
                     // Append link to the body
                     document.body.appendChild(link);
@@ -234,6 +234,22 @@ class App extends React.Component {
                                                 for="radio-4:3"
                                             >
                                                 4/3
+                                            </label>
+
+                                            <input
+                                                type="radio"
+                                                className="btn-check"
+                                                name="btnradio"
+                                                id="radio-1:1"
+                                                autoComplete="off"
+                                                checked={this.state.ratio === 1 / 1}
+                                                onClick={this.changeRatio.bind(null, 1 / 1)}
+                                            />
+                                            <label
+                                                className="btn btn-outline-primary"
+                                                for="radio-1:1"
+                                            >
+                                                1/1
                                             </label>
 
                                             <input
