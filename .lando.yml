@@ -1,0 +1,5 @@
+name: image-optimizer
+recipe: lamp
+config:
+  webroot: .
+  
