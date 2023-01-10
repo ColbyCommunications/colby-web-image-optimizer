@@ -245,6 +245,13 @@ class Wordpress extends React.Component {
                                                     </>
                                                 )}
                                             </button>
+                                            <button
+                                                type="button"
+                                                className="btn btn-secondary"
+                                                onClick={() => window.location.reload()}
+                                            >
+                                                Reset
+                                            </button>
                                         </div>
                                     </div>
                                 </>
