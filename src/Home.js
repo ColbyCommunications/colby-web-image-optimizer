@@ -16,7 +16,7 @@ class App extends React.Component {
             width: 0,
             height: 0,
             cropper: null,
-            ratio: 1 / 1,
+            ratio: 16 / 9,
             vertical: false,
             loading: false,
             quality: 0.8,
@@ -196,17 +196,18 @@ class App extends React.Component {
                                                 type="radio"
                                                 className="btn-check"
                                                 name="btnradio"
-                                                id="radio-1:1"
+                                                id="radio-16:9"
                                                 autoComplete="off"
-                                                checked={this.state.ratio === 1 / 1}
-                                                onClick={this.changeRatio.bind(null, 1 / 1)}
+                                                checked={this.state.ratio === 16 / 9}
+                                                onClick={this.changeRatio.bind(null, 16 / 9)}
                                             />
                                             <label
                                                 className="btn btn-outline-primary"
-                                                for="radio-1:1"
+                                                for="radio-16:9"
                                             >
-                                                1/1
+                                                16/9
                                             </label>
+
                                             <input
                                                 type="radio"
                                                 className="btn-check"
@@ -243,16 +244,16 @@ class App extends React.Component {
                                                 type="radio"
                                                 className="btn-check"
                                                 name="btnradio"
-                                                id="radio-16:9"
+                                                id="radio-1:1"
                                                 autoComplete="off"
-                                                checked={this.state.ratio === 16 / 9}
-                                                onClick={this.changeRatio.bind(null, 16 / 9)}
+                                                checked={this.state.ratio === 1 / 1}
+                                                onClick={this.changeRatio.bind(null, 1 / 1)}
                                             />
                                             <label
                                                 className="btn btn-outline-primary"
-                                                for="radio-16:9"
+                                                for="radio-1:1"
                                             >
-                                                16/9
+                                                1/1
                                             </label>
 
                                             <input

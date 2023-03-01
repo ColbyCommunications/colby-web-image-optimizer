@@ -16,7 +16,7 @@ class Wordpress extends React.Component {
             width: 0,
             height: 0,
             cropper: null,
-            ratio: 13 / 20,
+            ratio: 1 / 1,
             vertical: false,
             loading: false,
             quality: 1,
